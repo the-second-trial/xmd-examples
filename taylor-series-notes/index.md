@@ -1,2 +1,10 @@
 # Taylor Series
-This is about 
+
+## Author
+Andrea Tino
+
+## Abstract
+This is a normal thing.
+
+## Another
+Content here.
