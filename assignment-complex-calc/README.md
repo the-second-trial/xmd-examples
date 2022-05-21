@@ -1,5 +1,5 @@
-# Assignment on Line Integral
-This document is an assignment for Math students. Subject is Complex Analysis.
+# Assignment on Complex Calculus
+This document is an assignment for Math undergraduate students. Subject is _Complex Analysis_.
 
 ## Target formats
 This document is designed to be compiled using these templates:

@@ -1,7 +1,7 @@
 # Taylor Series
 
 ## Author
-Andrea Tino
+Your Math Lecturer
 
 ## Abstract
 This is a normal thing.

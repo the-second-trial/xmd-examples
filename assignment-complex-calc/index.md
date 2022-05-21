@@ -1,7 +1,7 @@
 # Assignment: Complex Calculus
 
 ## Author
-Andrea Tino
+Your Math Professor
 
 Read the description on each single exercise, and provide a solution.
 
