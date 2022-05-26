@@ -5,14 +5,14 @@
 ## Author
 Your Math Professor
 
-```{{hidden}}
-from sympy import *
-```
-
 Read the description on each single exercise, and provide a solution.
 
 #### Computations {{if=solutions}}
 Introducing the necessary quantities.
+
+```{{hidden}}
+from sympy import *
+```
 
 ```{{output=none}}
 x = symbols('x')
@@ -41,7 +41,8 @@ f_lim_val = limit(sin(x)/x, x, 0)
 latex(f_lim_val)
 ```
 
-But the function is not continuous because we cannot compute $f(0)$ since $0$ is not in the domain of $f$.
+The limit exists.
+Nonetheless, the function is not continuous since we cannot compute $f(0)$ given that $x = 0$ is not in the domain of $f$.
 
 ## Limits
 Compute the value of the following limit:
@@ -58,6 +59,15 @@ lim_val = limit(sin(x)/(x-1), x, 1)
 latex(lim_val)
 ```
 
+Which can be computed symbolically:
+
+$$
+\lim_{x \to 1} \frac{\sin{x}}{x - 1} =
+\lim_{x \to 1} \sin{x} \cdot \frac{1}{x - 1} =
+\lim_{x \to 1} \sin{x} \cdot \lim_{x \to 1} \frac{1}{x - 1} =
+\sin{1} \cdot \lim_{x \to 1} \frac{1}{x - 1} = \infty
+$$
+
 ## Differentiation
 Compute the first order derivative of $f$:
 
@@ -71,6 +81,20 @@ The first order derivative is:
 ```{{output=latex}}
 latex(diff(log(1/(sin(x))), x))
 ```
+
+Applying the chain rule:
+
+$$
+f^\prime(x) = \frac{1}{\frac{1}{\sin{x}}} \cdot \left( \frac{1}{\sin{x}} \right)^\prime
+$$
+
+Deriving further and simplfying:
+
+$$
+f^\prime(x) = \sin{x} \cdot \left[ \left( \sin{x} \right)^{-1} \right]^\prime =
+\sin{x} \cdot (-1) (\sin{x})^{-2} \cos{x} =
+-\frac{\cos{x}}{\sin{x}}
+$$
 
 ## Integration
 Compute the following integral:
