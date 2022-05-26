@@ -5,6 +5,10 @@
 ## Author
 Your Math Professor
 
+```{{hidden}}
+from sympy import *
+```
+
 Read the description on each single exercise, and provide a solution.
 
 ## Continuity
@@ -18,6 +22,10 @@ If deemed non-continuous, expand on the nature of the discontinuity.
 
 ### Solution {{if=solutions}}
 The solution is here.
+
+```{{output=latex}}
+latex(sqrt(8) + sqrt(27))
+```
 
 ## Limits
 Compute the value of the following limit:
